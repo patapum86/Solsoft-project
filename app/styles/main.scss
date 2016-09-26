@@ -1,0 +1,520 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+h1, h2, h3, h4, h5, h6, ul, li, a, hr {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #0149a1;
+    line-height: 1.667;
+  }
+
+  h2 {
+    font-size: 36px;
+    color: #5d6981;
+    line-height: 0.667;
+    }
+
+  h3 {
+    font-size: 36px;
+    color: #0149a1;
+    font-weight: 300;
+  }
+
+  h4 {
+    font-size: 30px;
+    color: #5d6981;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+
+  p {
+    font-size: 18px;
+    color: #7c8ca0;
+    line-height: 1.667;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0;
+}
+
+.price {
+  width: 238px;
+  height: 58px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+  background-color: #ff2d55;
+  color: #FFFFFF;
+  line-height: 58px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    color: #ff2d55;
+    background-color: #FFFFFF;
+  }
+}
+
+// HEADER ============================================= //
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+
+  a:hover {
+    text-decoration: none;
+    a {
+      margin-right: 208px;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+      margin-left: 180px;
+
+
+      li {
+        list-style-type: none;
+        margin-right: 40px;
+        font-size: 1.6em;
+        border: 1px solid #FFFFFF;
+        border-radius: 22.5px;
+        padding: 10px 15px;
+
+         &.active {
+           border-color: #9ba1ae;
+         }
+          &:hover {
+            border-color: #9ba1ae;
+          }
+
+        a {
+          color: #7b8599;
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 113px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #8897a9;
+  color: #8897a9;
+  border-radius: 50px;
+  font-size: 1.4em;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    border-color: #FFFFFF;
+  }
+}
+
+.fa-facebook {
+  color: #3c5a99;
+  border-color: #3c5a99;
+  &:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #3c5a99;
+  }
+}
+
+.fa-twitter {
+  color: #28aae1;
+  border-color: #28aae1;
+  &:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #28aae1;
+  }
+}
+
+// Banner ============================================= //
+
+.main-banner {
+  background-color: #e2e4e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 527px;
+      h1 {
+        margin-top: 132px;
+        font-weight: 700;
+      }
+
+  .price {
+    margin-top: 106px;
+    &:hover {
+      border-color: #ff2d55;
+    }
+  }
+}
+
+// laptop ============================================= //
+
+.main-container {
+  background-color: #e2e4e8;
+  .laptop {
+
+    width: 1094px;
+    height: 661px;
+    position: relative;
+    background-image: url("../images/macbook.png");
+    background-repeat: no-repeat;
+    margin: auto;
+
+    .inner-image {
+      position: absolute;
+      left: 187px;
+      top: 40px;
+      .play {
+        width: 134px;
+        height: 58px;
+        border: 2px solid #ffffff;
+        border-radius: 50px;
+        background-color: #ffffff;
+        color: #0149a1;
+        line-height: 58px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+          &:hover {
+            text-decoration: none;
+            background-color: #0149a1;
+            color: #FFFFFF;
+          }
+
+      }
+    }
+  }
+}
+iframe {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.fa-play:before {
+  margin-left: 20px;
+  color: #6785bb;
+}
+
+// ITEMS ============================================= //
+
+.items {
+  display: flex;
+  .item {
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+
+    img {
+      margin-bottom: 58px;
+      margin-top: 30px;
+    }
+    h4{
+       margin-bottom: 28px;
+    }
+    p{
+      margin-bottom: 141px;
+      padding-bottom: 0px;
+    }
+
+  }
+}
+
+// Creativity ============================================= //
+
+.creativity {
+  display: flex;
+  justify-content: center;
+  background: url("../images/creativity.png") no-repeat;
+  background-size: cover;
+  height: 610px;
+  object-fit: contain;
+  .price {
+    box-shadow: 0 0 40px 50px #FFFFFF;
+    margin-top: 355px;
+    background-color: #0149a1;
+    color: #ffffff;
+    border-color: #0149a1;
+    &:hover {
+      background-color: #ffffff;
+      color: #0149a1;
+    }
+
+  }
+}
+
+// WORK ============================================= //
+
+.work {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 920px;
+  background-color: #0149a1;
+  h1 {
+    color: #FFFFFF;
+    margin-top: 127px;
+  }
+  h2 {
+    margin-bottom: 114px;
+    color: #5483bb;
+  }
+  .price {
+    margin-bottom: 128px;
+    margin-top: 100px;
+    color: #0149a1;
+    background-color: #FFFFFF;
+    &:hover {
+      color: #FFFFFF;
+      background-color: #0149a1;
+      border-color: #ffffff;
+    }
+  }
+}
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: #ffffff;
+  }
+  img {
+    padding: 17px 50px;
+  }
+}
+
+// CAROUSEL ============================================= //
+
+.custom-slider {
+  height: 633px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    margin-top: 105px;
+    margin-bottom: 35px;
+  }
+
+  .middle-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    h4 {
+      width: 680px;
+      height: 143px;
+      text-align: center;
+      font-family: roboto light;
+      font-style: italic;
+      line-height: 1.25;
+      font-weight: 300;
+      font-style: italic;
+      color: #7c8ca0;
+      margin-bottom: 0px;
+    }
+    p {
+      margin-bottom: 80px;
+    }
+    .icon {
+      text-decoration: none;
+      &:hover {
+        background-color: #8897a9;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  p {
+    a {
+      color: #7c8ca0;
+      text-decoration: underline;
+    }
+  }
+  .circles {
+    display: flex;
+    color: #7c8ca0;
+    font-size: 1.3em;
+    margin-top: 70px;
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFFFFF;
+      padding: 2px;
+      border-radius: 50px;
+      border: 1px solid #d3d8df;
+      width: 22px;
+      height: 22px;
+      margin-right: 9px;
+    }
+
+    .active {
+      .inner-circle {
+        width: 12px;
+        height: 12px;
+        background-color: grey;
+        border-radius: 50px;
+      }
+    }
+
+  }
+}
+
+// TEAM ============================================= //
+
+.team {
+  background-color: #edeff1;
+  height: 925px;
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    margin-top: 100px;
+  }
+  .price {
+    margin-bottom: 97px;
+    &:hover {
+      border-color: #ff2d55;
+    }
+  }
+}
+
+.people {
+  margin-bottom: 90px;
+  margin-top: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  .person {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    img {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.container{
+  height: 100%;
+}
+
+// MAP ============================================= //
+#googleMap {
+  height: 592px;
+  width: 100%;
+  background-position: center;
+}
+
+// BLUE ============================================= //
+
+.blue {
+  display: flex;
+  background-color: #0149a1;
+  height: 731px;
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+      ul {
+        li {
+          list-style-type: none;
+          a {
+            line-height: 40px;
+            font-size: 18px;
+            color: #FFFFFF;
+            &:hover {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+.footer {
+  text-align: center;
+  margin-top: 90px;
+  a{
+    color: #FFFFFF;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
